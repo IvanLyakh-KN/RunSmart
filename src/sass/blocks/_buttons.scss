@@ -1,0 +1,25 @@
+.btn {
+    & a {
+        color: $main-color;
+        background: #C70101;
+        text-transform: uppercase;
+        text-align: center;
+        font-style: normal;
+        line-height: normal;
+        font-weight: 500;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+    &_header a {
+        margin-top: 5px;
+        float: right;
+        font-size: 12px;
+        padding: 8px 20px;
+    }
+    &_promo a{
+        padding: 15px 40px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+}

@@ -1,8 +1,14 @@
-h1 {
-    color: red;
-    font-size: 100px;
+@import 'base/variables';
+
+* {
+    font-family: 'Museo Sans Cyrl', sans-serif;
 }
 
-body {
-    background-color: gray;
+.container {
+    max-width: 950px;
+    margin: 0 auto;
 }
+
+@import 'blocks/promo';
+@import 'blocks/header';
+@import 'blocks/buttons.scss';
