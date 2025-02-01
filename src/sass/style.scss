@@ -7,8 +7,18 @@
 .container {
     max-width: 950px;
     margin: 0 auto;
+    padding: 0px 10px;
+}
+
+html {
+    font-size: 16px;
+
+    @media screen and (max-width: 988px) {
+        font-size: 16px;
+    }
 }
 
 @import 'blocks/promo';
 @import 'blocks/header';
 @import 'blocks/buttons.scss';
+@import 'blocks/advantages.scss';

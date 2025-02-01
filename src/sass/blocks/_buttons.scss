@@ -14,12 +14,17 @@
     &_header a {
         margin-top: 5px;
         float: right;
-        font-size: 12px;
+        font-size: 0.75rem;
         padding: 8px 20px;
+
+        @media screen and (max-width: 600px) {
+            display: none;
+        }
     }
-    &_promo a{
+
+    &_promo a {
         padding: 15px 40px;
-        font-size: 16px;
+        font-size: 1rem;
         font-weight: 500;
     }
 }

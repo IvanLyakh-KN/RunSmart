@@ -2,6 +2,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     &__logo {
         width: 250px;
@@ -9,7 +10,6 @@
 
         & img {
             height: 100%;
-            width: 100%;
         }
     }
 
@@ -20,25 +20,33 @@
         font-weight: 500;
 
         & p {
-            font-size: 12px;
+            font-size: 0.75rem;
             line-height: 12px;
             margin: 0;
-            padding-bottom: 15px;
+            padding-bottom: 10px;
         }
 
         & h2 {
-            font-size: 18px;
+            font-size: 1.125rem;
             margin: 0;
+        }
+
+        @media screen and (max-width: 768px) {
+            display: none;
         }
     }
 
     &__phone {
         color: #FFF;
-        font-size: 18px;
+        font-size: 1.125rem;
         font-style: normal;
         font-weight: 700;
         line-height: 18px;
         margin-top: 15px;
         text-decoration: none;
+
+        @media screen and (max-width: 600px) {
+            display: none;
+        }
     }
 }

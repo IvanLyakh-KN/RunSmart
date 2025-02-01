@@ -1,39 +1,57 @@
 .promo {
-    background: url("../../img/promo-bg.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
+    background: url(../../img/promo-bg.jpg) center (center/cover) no-repeat;
+    //height: 100vh;
+    min-height: 650px;
     width: 100%;
     padding: 25px 0 95px 0;
     color: $main-color;
+
+    @media screen and (max-width: 988px) {
+        min-height: 0;
+        height: 100vh;
+    }
 
     &__wrapper {
         margin-top: 100px;
         display: flex;
         flex-direction: column;
         align-items: end;
+        text-align: center;
+
+        @media screen and (max-width: 988px) {
+            align-items: center;
+        }
     }
 
     &__header {
-        font-size: 42px;
+        font-size: 2.625rem;
         font-weight: 700;
         text-transform: uppercase;
+
+        @media screen and (max-width: 988px) {
+            font-size: 2rem;
+            line-height: 2.2rem;
+        }
     }
 
     &__subheader {
-        font-size: 24px;
+        font-size: 1.5rem;
         font-weight: 500;
         text-transform: uppercase;
         padding-top: 17px;
         margin-bottom: 60px;
+
+        @media screen and (max-width: 988px) {
+            font-size: 1rem;
+        }
     }
 
     &__items-container {
-        width: 425px;
         display: flex;
         margin-bottom: 70px;
         justify-content: space-between;
         gap: 40px;
+        font-size: 0.875rem;
     }
 
     &__item {
@@ -49,10 +67,16 @@
     &__order-katalog {
         text-align: right;
         margin-top: 25px;
+        font-size: 1rem;
 
         a {
             color: $main-color;
             text-transform: uppercase;
+            text-decoration: underline;
+        }
+
+        @media screen and (max-width: 988px) {
+            margin-top: 30px;
         }
     }
 }
