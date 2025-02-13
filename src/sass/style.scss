@@ -12,13 +12,14 @@
 
 html {
     font-size: 16px;
-
-    @media screen and (max-width: 988px) {
-        font-size: 16px;
-    }
 }
 
 @import 'blocks/promo';
 @import 'blocks/header';
 @import 'blocks/buttons.scss';
 @import 'blocks/advantages.scss';
+@import 'blocks/consultation.scss';
+@import 'blocks/form.scss';
+@import 'blocks/modal-forms.scss';
+@import 'blocks/carousel.scss';
+@import 'blocks/catalog.scss';

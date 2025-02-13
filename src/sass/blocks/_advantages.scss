@@ -10,6 +10,11 @@
         font-weight: 700;
         margin-bottom: 60px;
         text-transform: uppercase;
+
+        @media screen and (max-width: 988px) {
+            font-size: 1.5rem;
+            margin-bottom: 40px;
+        }
     }
 
     &__items {
@@ -38,5 +43,10 @@
             font-weight: 300;
             line-height: 18px;
         }
+    }
+
+    @media screen and (max-width: 988px) {
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
 }
